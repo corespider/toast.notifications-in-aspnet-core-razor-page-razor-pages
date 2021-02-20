@@ -1,0 +1,91 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js">
+
+    </script>
+
+    <script type="text/javascript" src="js/toastr.js">
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="css/toastr.css">
+
+    <script type="text/javascript" src="js/toastrsample.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/toastrsample.css">
+
+    <title>Use Toastr in ASP .NET Core-5</title>
+</head>
+
+<body>
+    <h2>
+        How to Use Toastr Notifications
+    </h2>
+    <div class="control-group" id="toastrTypeGroup">
+        <div class="controls">
+            <label>
+                Toast Type
+            </label>
+            <label class="radio">
+                <input type="radio" name="toasts" value="success" checked />Success
+            </label>
+            <label class="radio">
+                <input type="radio" name="toasts" value="info" />Info
+            </label>
+            <label class="radio">
+                <input type="radio" name="toasts" value="warning" />Warning
+            </label>
+            <label class="radio">
+                <input type="radio" name="toasts" value="error" />Error
+            </label>
+        </div>
+    </div>
+    <br />
+    <div class="control-group" id="toastrPositionGroup">
+        <div class="controls">
+            <label>
+                Position
+            </label>
+            <label class="radio">
+                <input type="radio" name="positions" value="toast-top-right" checked />Top Right
+            </label>
+            <label class="radio">
+                <input type="radio" name="positions" value="toast-bottom-right" />Bottom Right
+            </label>
+            <label class="radio">
+                <input type="radio" name="positions" value="toast-bottom-left" />Bottom Left
+            </label>
+            <label class="radio">
+                <input type="radio" name="positions" value="toast-top-left" />Top Left
+            </label>
+            <label class="radio">
+                <input type="radio" name="positions" value="toast-top-full-width" />Top Full Width
+            </label>
+            <label class="radio">
+                <input type="radio" name="positions" value="toast-bottom-full-width" />Bottom Full Width
+            </label>
+            <label class="radio">
+                <input type="radio" name="positions" value="toast-top-center" />Top Center
+            </label>
+            <label class="radio">
+                <input type="radio" name="positions" value="toast-bottom-center" />Bottom Center
+            </label>
+        </div>
+    </div>
+
+    <br />
+    <button type="button" class="btn" id="showtoast" class="btn btn-primary">
+        Show Toastr Notification
+    </button>
+</body>
+
+</html>   
